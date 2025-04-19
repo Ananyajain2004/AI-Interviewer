@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🤖 AI Interviewer
+AI Interviewer is an intelligent, interactive web application designed to simulate real-time interview sessions using Vapi AI. It helps users prepare for job interviews by asking domain-specific questions, evaluating answers, and giving constructive feedback.
 
-## Getting Started
+🧠 Features
+💬 Conversational AI to conduct mock interviews
 
-First, run the development server:
+📂 Multiple interview domains (Tech, HR, Marketing, etc.)
 
-```bash
+📊 Real-time feedback and scoring system
+
+🎯 Behavioral and technical question sets
+
+📝 Summary report after each session
+
+📡 Voice and text-based interaction (optional)
+
+🧩 Easily extendable with custom question banks
+
+🛠️ Tech Stack
+Frontend: React / Next.js / Tailwind CSS
+
+Backend: Node.js / Next.js API Routes
+
+AI/NLP: OpenAI GPT / Vapi AI 
+
+Database:  Firebase
+
+Authentication:Firebase Auth / NextAuth
+
+Deployment: Vercel
+
+🚀 Getting Started
+Prerequisites
+Node.js ≥ 16
+
+npm / yarn
+
+API keys for OpenAI or other NLP provider (if used)
+
+Database connection URL
+
+Installation
+bash
+Copy
+Edit
+git clone https://github.com/Ananyajain2004/AI-Interviewer.git
+cd AI-Interviewer
+npm install
+Environment Variables
+Create a .env.local file in the root directory and add your API keys and configuration:
+
+env
+Copy
+Edit
+OPENAI_API_KEY=your-api-key
+DATABASE_URL=your-db-url
+
+Running Locally
+bash
+Copy
+Edit
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Visit http://localhost:3000 to start using the app.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+📦 Deployment
+You can deploy this app using platforms like Vercel, Netlify, or Docker:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+bash
+Copy
+Edit
+# For Docker
+docker build -t ai-interviewer .
+docker run -p 3000:3000 ai-interviewer
+🧪 Testing
+Add your test framework setup here if any (e.g., Jest, Cypress).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+bash
+Copy
+Edit
+npm run test
+🙌 Contributing
+Contributions are welcome! Please open an issue or submit a pull request for improvements, bug fixes, or feature additions.
 
-## Learn More
+📄 License
+This project is licensed under the MIT License.
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
